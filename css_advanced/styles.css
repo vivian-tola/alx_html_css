@@ -1,0 +1,395 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("./source-sans-pro/SourceSansPro-Regular.otf");
+}
+@font-face {
+  font-family: "Spin-Cycle-OT";
+  src: url("./Spin-Cycle-OT/spincycle_ot.otf");
+}
+
+body {
+  background-image: url("./images/Object.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 100px;
+}
+
+header nav ul {
+  width: 234px;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15.08px;
+}
+.section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 180px;
+}
+
+.section1 .get_schooled {
+  width: 684px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+
+.section1 .get_schooled h1 {
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 150.84px;
+  color: #ffffff;
+}
+.smiles_grin_laugh {
+  display: flex;
+
+  width: 50%;
+  justify-content: space-between;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+}
+button.register_free {
+  margin-top: 50px;
+  display: block;
+  background-color: #c271ff;
+  /* width: 162px; */
+  height: 44px;
+  border-radius: 22px;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  box-shadow: 2px black;
+  border: none;
+  box-shadow: 0px 2px 20px 0px #00000080;
+}
+
+.learn_from_pros {
+  margin-top: 150px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.learn_from_pros h2 {
+  font-size: 32px;
+  font-weight: 100;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.learn_from_pros h2 span {
+  color: #c271ff;
+  font-weight: 700;
+}
+
+.the_pros {
+  width: 1009px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  margin-top: 80px;
+}
+
+.the_pros div {
+  width: 150px;
+}
+.the_pros div img {
+  border-radius: 50%;
+}
+
+.the_pros div h3 {
+  margin-top: 10px;
+  font-weight: 900;
+  font-size: 18px;
+  text-align: center;
+}
+.the_pros div p {
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.section2 {
+  background-color: #c271ff;
+  height: 392px;
+  /* padding: 20px 100px; */
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section2 div {
+  margin-left: 40px;
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.section2 div blockquote {
+  width: 730px;
+  font-weight: 400;
+  line-height: 33.6px;
+}
+
+.section2 div h3 {
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.section2 div p {
+  font-style: italic;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.section3 {
+  padding: 100px;
+  height: 500px;
+  font-family: "SourceSansPro", sans-serif;
+}
+
+.section3 h2 {
+  font-size: 32px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.section3 h2 span {
+  color: #c271ff;
+  font-weight: 700;
+}
+
+.section3 .the_tutorials {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.the_tutorials .tutorial {
+  width: 255px;
+  height: 335px;
+  position: relative;
+}
+
+/* .tutorial img::after {
+  content: "./images/play.png";
+  position: absolute;
+} */
+
+.tutorial .absolute {
+  position: absolute;
+  left: 38%;
+  top: 12%;
+}
+
+.tutorial h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20.11px;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+.tutorial p {
+  color: #07162980;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+.the_tutorials .tutor {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+.the_tutorials .tutor img {
+  width: 30px;
+  height: 30px;
+}
+
+.tutor h4 {
+  margin-left: 10px;
+  color: #c271ff;
+  font-size: 14px;
+}
+.tutorials_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+.tutorials_footer p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #c271ff;
+}
+.stars {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 107px;
+}
+.stars i {
+  color: #c271ff;
+  font-size: 15px;
+}
+
+.stars i.last {
+  color: #d8d8d8;
+}
+
+.section4 {
+  margin-top: 200px;
+  background-color: #071629;
+  height: 502px;
+  padding: 30px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+
+.section4 h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.section4 h2 span {
+  color: #c271ff;
+}
+
+.section4 .membership {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+  width: 1200px;
+}
+
+.section4 .membership div {
+  width: 257px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.section4 .membership div h3 {
+  margin-top: 25px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+.section4 .membership div p {
+  margin-top: 25px;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.section5 {
+  padding: 100px 300px;
+}
+
+.section5 h2 {
+  font-weight: 300;
+  font-size: 60px;
+  color: #071629;
+  text-align: center;
+}
+.section5 .all_faqs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.single_faq_group {
+  width: 350px;
+}
+.single_faq {
+  margin-bottom: 80px;
+}
+
+.single_faq h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20.11px;
+  margin-bottom: 20px;
+  color: #071629;
+}
+
+.single_faq div {
+  color: #07162980;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+footer {
+  background-color: #071629;
+  height: 249px;
+  padding: 100px 230px;
+}
+
+footer section div {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer section .socials {
+  display: flex;
+  gap: 15px;
+}
+footer section .socials .icons {
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 70px;
+  font-size: 12px;
+  font-weight: 400;
+}
