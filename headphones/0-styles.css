@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("./source-sans-pro/SourceSansPro-Regular.otf");
+}
+@font-face {
+  font-family: "Spin-Cycle-OT";
+  src: url("./Spin-Cycle-OT/spincycle_ot.otf");
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./images/headphones_hero_1.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 200px;
+}
+
+header nav .logo {
+  width: 162px;
+  height: 32px;
+}
+
+.menu {
+  display: none;
+  width: 234px;
+  /* display: flex; */
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15.08px;
+  font-family: "SourceSansPro", sans-serif;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+.hero_piece {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "SourceSansPro", sans-serif;
+  color: #ffffff;
+}
+
+.hero_piece h1 {
+  font-size: 32px;
+}
+
+.hero_piece p {
+  font-size: 18px;
+}
+.hero_piece button {
+  margin-top: 60px;
+  background-color: #ff6565;
+  color: #ffffff;
+  width: 162px;
+  padding: 10px 20px;
+  height: 44px;
+  border-radius: 22px;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  /* box-shadow: 0px 2px 20px 0px #00000080; */
+}
+
+.hero_desc {
+  margin-top: 60px;
+  width: 50%;
+  text-align: center;
+  font-family: "SourceSansPro", sans-serif;
+  font-weight: 300;
+  line-height: 26px;
+  font-size: 16px;
+  opacity: 100%;
+}
+
+@media (max-width: 768px) {
+  header {
+    background-size: cover;
+    background-position: center;
+  }
+  header nav {
+    padding: 30px 50px;
+  }
+  .hero_piece {
+    height: 100vh;
+    padding: 0 30px;
+  }
+  .hero_desc {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  header nav {
+    flex-direction: column;
+  }
+  .hamburger {
+    display: block;
+  }
+  .menu {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .menu li {
+    margin-bottom: 20px;
+  }
+  .hero_piece h1 {
+    text-align: center;
+  }
+  .hero_piece p {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .hero_piece button{
+    margin-bottom: 80px;
+  }
+  .hero_desc {
+    margin-top: 80px;
+  }
+}
